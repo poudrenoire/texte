@@ -31,4 +31,5 @@ def chapitre():
  for _ in range(1250):
     phrase()
 
+sujet()
 chapitre()
