@@ -25,7 +25,7 @@ def complement():
   print(complement[rnd])
 
 def phrase():
-  print(' ' + sujet() + verbe() + complement() + '.')
+  print(' ') + sujet() + verbe() + complement() + print('.')
 
 def chapitre():
  for _ in range(1250):
