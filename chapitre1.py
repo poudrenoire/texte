@@ -1,5 +1,9 @@
+# Ce fichier génère le premier chapitre du livre à partir des lexiques créés pour l'occasion. Y sont définis plusieurs types de phrases.
 import random
-def phrase():
+
+# Définition des phrases sujet-verbe-complément en "Je"
+
+def phrase_svc_je():
     s = open("lexique_sujets.txt")
     v = open("lexique_verbes.txt")
     c = open("lexique_complements.txt")
@@ -7,9 +11,20 @@ def phrase():
     verbe = v.readlines()
     complement = c.readlines()
     print(random.choice(sujet), random.choice(verbe), random.choice(complement), '. ')
+    
+ # Définition des phrases Adverbe, sujet verbe intransitif en "Je"
+
+def phrase_asv_je():
+    s = open("lexique_sujets.txt")
+    v = open("lexique_verbes.txt")
+    a = open("lexique_adverbes.txt")
+    sujet = s.readlines()
+    verbe = v.readlines()
+    adverbe = a.readlines()
+    print(random.choice(adverbe), random.choice(sujet), random.choice(verbe), '. ')
 
 def chapitre():
  for _ in range(1250):
-    phrase()
+    phrase_svc_je()
 
 chapitre()
