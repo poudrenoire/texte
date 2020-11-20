@@ -26,9 +26,9 @@ def complement():
 
 def phrase():
   print(' ', end='', flush=True)
-  sujet(end='', flush=True)
-  verbe(end='', flush=True)
-  complement(end='', flush=True)
+  sujet()
+  verbe()
+  complement()
   print('.', end='', flush=True)
 
 def chapitre():
