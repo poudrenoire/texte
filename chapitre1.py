@@ -1,6 +1,6 @@
 import random
 
-def sujet()
+def sujet():
   s = open("lexique_sujets.txt")
   sujet = s.readlines()
   s.close()
@@ -8,7 +8,7 @@ def sujet()
   rnd = random.randint(0, last)
   print(sujet[rnd])
   
-def verbe()
+def verbe():
   v = open("lexique_verbes.txt")
   verbe = v.readlines()
   v.close()
@@ -16,7 +16,7 @@ def verbe()
   rnd = random.randint(0, last)
   print(verbe[rnd])
  
-def complement()
+def complement():
   c = open("lexique_complements.txt")
   complement = c.readlines()
   c.close()
@@ -24,10 +24,10 @@ def complement()
   rnd = random.randint(0, last)
   print(complement[rnd])
 
-def phrase()
+def phrase():
   print(' ' + sujet() + verbe() + complement() + '.')
 
-def chapitre()
+def chapitre():
  for _ in range(1250):
     phrase()
 
