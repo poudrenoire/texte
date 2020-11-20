@@ -6,7 +6,7 @@ def sujet():
   s.close()
   last = 50
   rnd = random.randint(0, last)
-  print(sujet[rnd]),
+  print(sujet[rnd], end='', flush=True)
   
 def verbe():
   v = open("lexique_verbes.txt")
@@ -14,7 +14,7 @@ def verbe():
   v.close()
   last = 999
   rnd = random.randint(0, last)
-  print(verbe[rnd]),
+  print(verbe[rnd], end='', flush=True)
  
 def complement():
   c = open("lexique_complements.txt")
@@ -22,14 +22,14 @@ def complement():
   c.close()
   last = 999
   rnd = random.randint(0, last)
-  print(complement[rnd]),
+  print(complement[rnd], end='', flush=True)
 
 def phrase():
-  print(' '),
-  sujet(),
-  verbe(),
-  complement(),
-  print('.'),
+  print(' ', end='', flush=True)
+  sujet()
+  verbe()
+  complement()
+  print('.', end='', flush=True)
 
 def chapitre():
  for _ in range(1250):
