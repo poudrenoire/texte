@@ -12,7 +12,7 @@ def verbe():
   v = open("lexique_verbes.txt")
   verbe = v.readlines()
   v.close()
-  last = 999
+  last = 50
   rnd = random.randint(0, last)
   print(verbe[rnd], end='', flush=True)
  
@@ -20,7 +20,7 @@ def complement():
   c = open("lexique_complements.txt")
   complement = c.readlines()
   c.close()
-  last = 999
+  last = 50
   rnd = random.randint(0, last)
   print(complement[rnd], end='', flush=True)
 
