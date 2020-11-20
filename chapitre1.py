@@ -1,7 +1,7 @@
 import random
 
 def sujet()
-  s = open("lexique_sujet.txt")
+  s = open("lexique_sujets.txt")
   sujet = s.readlines()
   s.close()
   last = 50
@@ -17,7 +17,7 @@ def verbe()
   print(verbe[rnd])
  
 def complement()
-  c = open("lexique_complement.txt")
+  c = open("lexique_complements.txt")
   complement = c.readlines()
   c.close()
   last = 4999
