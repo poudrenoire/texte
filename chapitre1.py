@@ -10,7 +10,10 @@ def phrase_svc_je():
     sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
-    print(random.choice(sujet), random.choice(verbe), random.choice(complement), '. ')
+    sujet_r = capitalize(random.choice(sujet))
+    verbe_r = random.choice(verbe)
+    complement_r = random.choice(complement)
+    print(sujet_r, verbe_r, complement_r, '. ')
     
  # Définition des phrases Adverbe, sujet verbe intransitif en "Je"
 
