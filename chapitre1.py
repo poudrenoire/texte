@@ -4,12 +4,15 @@ import random
 # Définition des phrases transitives : sujet-verbe-complément en "Je"
 
 def phrase_svc_je():
-    s = open("lexique_sujets.txt").splitlines()
-    v = open("lexique_v_trans.txt").splitlines()
-    c = open("lexique_complements.txt").splitlines()
+    s = open("lexique_sujets.txt")
+    v = open("lexique_v_trans.txt")
+    c = open("lexique_complements.txt")
     sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
+    sujet = sujet.splitlines()
+    verbe = verbe.splitlines()
+    complement = complement.splitlines()
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
