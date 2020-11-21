@@ -1,1 +1,6 @@
 lentement
+rapidement
+discrètement
+aléatoirement
+doucement
+habilement
