@@ -35,6 +35,6 @@ def phrase_asv_je():
 
 def chapitre():
  for _ in range(250):
-    print(phrase_svc_je(), phrase_asv_je())
+    phrase_svc_je(), phrase_asv_je()
 
 chapitre()
