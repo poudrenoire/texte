@@ -27,9 +27,9 @@ def phrase_asv_je():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-    if adverbe_r == NoneType
+    if adverbe_r is none:
         adverbe_r = random.choice(adverbe)
-    else
+    else:
         print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
 
 def chapitre():
