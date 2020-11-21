@@ -27,7 +27,7 @@ def phrase_asv_je():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-    if adverbe_r is none:
+    if adverbe_r is None:
         adverbe_r = random.choice(adverbe)
     else:
         print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
