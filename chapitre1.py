@@ -1,18 +1,24 @@
 # Ce fichier génère le premier chapitre du livre à partir des lexiques créés pour l'occasion. Y sont définis plusieurs types de phrases.
+# On commence par importer le module random
+
 import random
 
 # Définition des phrases transitives : sujet-verbe-complément en "Je"
 
 def phrase_svc_je():
+    # Ouverture des fichiers pour chaque type de mots dans une variable
     s = open("lexique_sujets.txt")
     v = open("lexique_v_trans.txt")
     c = open("lexique_complements.txt")
+    # Lecture des fichiers dans une variable
     sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
+    # Sélection d'une ligne aléatoire des fichiers
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
+    # Impression des lignes sélectionnées, dans l'ordre spécifé, sans retour à la ligne, avec ajout de majuscule.
     print(str(sujet_r.capitalize().splitlines()), str(verbe_r.splitlines()), str(complement_r.splitlines()))
     
  # Définition des phrases instransitives en "Je" avec adverbe en entrée.
