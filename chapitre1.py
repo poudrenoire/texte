@@ -27,7 +27,10 @@ def phrase_asv_je():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
+    if adverbe_r == NoneType
+        adverbe_r = random.choice(adverbe)
+    else
+        print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
 
 def chapitre():
  for _ in range(250):
