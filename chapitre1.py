@@ -10,13 +10,10 @@ def phrase_svc_je():
     sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
-    sujet = sujet.splitlines()
-    verbe = verbe.splitlines()
-    complement = complement.splitlines()
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
-    print(str(sujet_r.capitalize()), str(verbe_r), str(complement_r))
+    print(str(sujet_r.capitalize().splitlines()), str(verbe_r.splitlines()), str(complement_r.splitlines()))
     
  # Définition des phrases instransitives en "Je" avec adverbe en entrée.
 
