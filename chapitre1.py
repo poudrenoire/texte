@@ -50,6 +50,6 @@ def phrase_svcc_je():
 
 def chapitre():
  for _ in range(250):
-    phrase_svc_je(), phrase_asv_je(), print_svcc_je()
+    phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()
 
 chapitre()
