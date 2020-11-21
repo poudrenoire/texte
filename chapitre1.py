@@ -5,7 +5,7 @@ import random
 
 def phrase_svc_je():
     s = open("lexique_sujets.txt")
-    v = open("lexique_verbes.txt")
+    v = open("lexique_v_trans.txt")
     c = open("lexique_complements.txt")
     sujet = s.readlines()
     verbe = v.readlines()
@@ -19,7 +19,7 @@ def phrase_svc_je():
 
 def phrase_asv_je():
     s = open("lexique_sujets.txt")
-    v = open("lexique_verbes.txt")
+    v = open("lexique_v_intrans.txt")
     a = open("lexique_adverbes.txt")
     sujet = s.readlines()
     verbe = v.readlines()
