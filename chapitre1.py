@@ -24,10 +24,13 @@ def phrase_asv_je():
     sujet = s.readlines()
     verbe = v.readlines()
     adverbe = a.readlines()
-    print(random.choice(adverbe), random.choice(sujet), random.choice(verbe), '. ')
+    sujet_r = random.choice(sujet)
+    verbe_r = random.choice(verbe)
+    adverbe_r = random.choice(adverbe)
+    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
 
 def chapitre():
- for _ in range(1250):
-    phrase_svc_je()
+ for _ in range(250):
+    print(phrase_svc_je(), phrase_asv_je())
 
 chapitre()
