@@ -10,7 +10,7 @@ def phrase_svc_je():
     sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
-    sujet_r = crandom.choice(sujet)
+    sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
     print(sujet_r.capitalize(), verbe_r, complement_r, '. ')
