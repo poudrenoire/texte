@@ -58,9 +58,5 @@ def phrase_svcc_je():
         sujet_r = "je"   
     print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
     
-    
-def chapitre():
-   for _ in range(250):
-    return(phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
-
-print(chapitre())
+for _ in range (250):
+  print(phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
