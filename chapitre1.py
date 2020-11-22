@@ -60,7 +60,7 @@ def phrase_svcc_je():
 
 def paragraphe():
  phraseList = [phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()]
- print(random.sample(phraseList))
+ print(random.sample(phraseList,3))
 
 def chapitre():
   for _ in range(250):
