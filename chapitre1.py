@@ -65,6 +65,6 @@ def paragraphe():
     
 def chapitre():
   for _ in range(250):
-   print(paragraphe())
+   return(paragraphe())
 
 chapitre()
