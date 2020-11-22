@@ -60,8 +60,6 @@ def phrase_svcc_je():
     
     
 def chapitre():
-   phraseList = [phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()] 
-   for _ in range(250):
-     print(random.choice(phraseList))
+     print(phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
 
 chapitre()
