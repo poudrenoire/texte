@@ -28,8 +28,8 @@ def phrase_svc_je():
 def phrase_asv_je():
     v = open("lexique_v_intrans.txt")
     a = open("lexique_adverbes.txt")
-    verbe = v.readlines()
-    adverbe = a.readlines()
+    verbe = v.read().splitlines()
+    adverbe = a.read().splitlines()
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
     voyelles = ["a", "e", "i", "o", "u", "y"]
@@ -45,9 +45,9 @@ def phrase_svcc_je():
     v = open("lexique_v_ditrans.txt")
     c = open("lexique_complements.txt")
     c2 = open ("lexique_complements_a.txt")
-    verbe = v.readlines()
-    complement = c.readlines()
-    complement2 = c2.readlines()
+    verbe = v.read().splitlines()
+    complement = c.read().splitlines()
+    complement2 = c2.read().splitlines()
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
     complement2_r = random.choice(complement2)
