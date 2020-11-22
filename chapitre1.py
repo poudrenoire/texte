@@ -49,7 +49,7 @@ def phrase_svcc_je():
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
     complement2_r = random.choice(complement2)
-        voyelles = ["a", "e", "i", "o", "u", "y"]
+    voyelles = ["a", "e", "i", "o", "u", "y"]
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
