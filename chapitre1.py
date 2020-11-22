@@ -18,8 +18,9 @@ def phrase_svc_je():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
+    sujet_r = sujet_r.capitalize
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
-    phrase = sujet_r.capitalize + verbe_r + complement_r + '. '
+    phrase = sujet_r + verbe_r + complement_r + ". "
     print(phrase)
     
  # Définition des phrases instransitives en "Je" avec adverbe.
