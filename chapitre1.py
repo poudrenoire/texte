@@ -43,7 +43,7 @@ def phrase_asv_je():
 
 def phrase_svcc_je():
     v = open("lex/lexique_v_ditrans.txt")
-    c = open("lex/lexique_objets_det.txt.txt")
+    c = open("lex/lexique_objets_det.txt")
     c2 = open ("lex/lexique_objets_a.txt")
     verbe = v.read().splitlines()
     complement = c.read().splitlines()
