@@ -7,20 +7,23 @@ import random
 
 def phrase_svc_je():
     # Ouverture des fichiers pour chaque type de mots dans une variable
-    s = open("lexique_sujets.txt")
     v = open("lexique_v_trans.txt")
     c = open("lexique_complements.txt")
     # Lecture des fichiers dans une variable
-    sujet = s.readlines()
     verbe = v.readlines()
     complement = c.readlines()
     # Sélection d'une ligne aléatoire des fichiers
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
+    voyelles = ["a", "e", "i", "o", "u", "y"]
+    if verbe_r[0] in voyelles:
+        sujet_r = "j\'"
+    else:
+        sujet_r = "je" 
     sujet_r = sujet_r.capitalize
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
-    phrase = str.sujet_r + str.verbe_r + str.complement_r + ". "
+    phrase = sujet_r + str(verbe_r) + str(complement_r) + ". "
     print(phrase)
     
  # Définition des phrases instransitives en "Je" avec adverbe.
