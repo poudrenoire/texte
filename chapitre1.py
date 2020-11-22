@@ -57,9 +57,6 @@ def phrase_svcc_je():
     else:
         sujet_r = "je"   
     return(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
-
-def paragraphe():
- return(random.choice(phraseList))
     
     
 def chapitre():
