@@ -37,20 +37,24 @@ def phrase_asv_je():
         sujet_r = "je"   
     print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
         
-# Définition des phrases ditransitivrs en "Je"
+# Définition des phrases ditransitives en "Je"
 
 def phrase_svcc_je():
-    s = open("lexique_sujets.txt")
-    v = open("lexique_v_trans.txt")
+    v = open("lexique_v_ditrans.txt")
     c = open("lexique_complements.txt")
-    sujet = s.readlines()
+    c2 = open ("lexique_complements_a.txt")
     verbe = v.readlines()
     complement = c.readlines()
-    sujet_r = random.choice(sujet)
+    complement2 = c2.readlines()
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
-    complement2_r = random.choice(complement)
-    print(sujet_r.capitalize(), verbe_r, complement_r, ' à ', complement2_r, '. ')
+    complement2_r = random.choice(complement2)
+        voyelles = ["a", "e", "i", "o", "u", "y"]
+    if verbe_r[0] in voyelles:
+        sujet_r = "j\'"
+    else:
+        sujet_r = "je"   
+    print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
 
 def chapitre():
  for _ in range(250):
