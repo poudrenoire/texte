@@ -30,7 +30,8 @@ def phrase_asv_je():
     adverbe = a.readlines()
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-    if verbe_r[0] == 'a' or 'e' or 'i' or 'o' or 'u' or 'y':
+    voyelles = ["a", "e", "i", "o", "u", "y"]
+    if verbe_r[0] in voyelles:
         sujet_r = "je"
     else:
         sujet_r = "j\'"   
