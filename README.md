@@ -1,5 +1,5 @@
 # texte
-Ceci est une tentative de créer un logiciel d'assistance à la production d'un roman. Il s'agit donc d'utiliser ici le code comme ouvroir de littérature potentiel, de créer une littérature qui en produit d'autres, aléatoirement ou selon des contraintes fixées dans des algorithmes.
+Ceci est une tentative de créer un logiciel d'assistance à la production d'un roman. Il s'agit donc d'utiliser ici le code comme ouvroir de littérature potentiel, de créer une littérature qui en produit d'autres, aléatoirement ou selon des contraintes fixées dans des algorithmes. Ceci est aussi l'occasion d'apprendre la programmation, en Python dans un premier temps.
 
 ## Précédents
 
