@@ -60,7 +60,7 @@ def phrase_svcc_je():
 
 def paragraphe():
  phraseList = (phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
- phraseRand = random.sample(phraseList,len(phraseList))
+ phraseRand = random.choices(phraseList, weights = [3, 2, 2], k = 3)
  print(phraseRand)
 
 paragraphe()
