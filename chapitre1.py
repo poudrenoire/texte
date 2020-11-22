@@ -10,8 +10,8 @@ def phrase_svc_je():
     v = open("lexique_v_trans.txt")
     c = open("lexique_complements.txt")
     # Lecture des fichiers dans une variable
-    verbe = v.readlines()
-    complement = c.readlines()
+    verbe = v.read().splitlines()
+    complement = c.read().splitlines()
     # Sélection d'une ligne aléatoire des fichiers
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
