@@ -59,8 +59,8 @@ def phrase_svcc_je():
     print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
 
 def paragraphe():
- phraseList = (phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
- phraseRand = random.choices(phraseList, weights = [3, 2, 2], k = 3)
+ phraseList = [phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()]
+ phraseRand = random.choices(phraseList, weights = [3, 2, 2], k = 15)
  print(phraseRand)
 
 paragraphe()
