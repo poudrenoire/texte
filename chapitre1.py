@@ -33,11 +33,7 @@ def phrase_asv_je():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-  # Ne pas mettre d'adverbe si la valeur est None
-    if adverbe_r is None:
-        print(sujet_r.capitalize(), verbe_r, '. ')
-    else:
-        print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
+    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
         
 # Définition des phrases ditransitivrs en "Je"
 
