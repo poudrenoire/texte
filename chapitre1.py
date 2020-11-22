@@ -61,6 +61,6 @@ def phrase_svcc_je():
     
 def chapitre():
    for _ in range(250):
-     print(str(phrase_svc_je()).strip(), str(phrase_asv_je()).strip(), str(phrase_svcc_je()).strip())
+     return(str(phrase_svc_je()).strip(), str(phrase_asv_je()).strip(), str(phrase_svcc_je()).strip())
 
 chapitre()
