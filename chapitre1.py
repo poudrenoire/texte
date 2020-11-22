@@ -64,8 +64,8 @@ def paragraphe():
 
 paragraphe()
     
-#def chapitre():
-#  for _ in range(250):
-#    print(paragraphe())
+def chapitre():
+  for _ in range(250):
+    print(paragraphe())
 
-#chapitre()
+chapitre()
