@@ -21,18 +21,19 @@ def phrase_svc_je():
     # Impression des lignes sélectionnées, dans l'ordre spécifé, sans retour à la ligne, avec ajout de majuscule.
     print(str(sujet_r.capitalize().splitlines()), str(verbe_r.splitlines()), str(complement_r.splitlines()))
     
- # Définition des phrases instransitives en "Je" avec adverbe en entrée.
+ # Définition des phrases instransitives en "Je" avec adverbe.
 
 def phrase_asv_je():
-    s = open("lexique_sujets.txt")
     v = open("lexique_v_intrans.txt")
     a = open("lexique_adverbes.txt")
-    sujet = s.readlines()
     verbe = v.readlines()
     adverbe = a.readlines()
-    sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
+    if verbe_r[0] == 'a' or 'e' or 'i' or 'o' or 'u' or 'y':
+        sujet_r = "je"
+    else:
+        sujet_r = "j\'"   
     print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
         
 # Définition des phrases ditransitivrs en "Je"
