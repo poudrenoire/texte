@@ -59,4 +59,4 @@ def phrase_svcc_je():
     print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
     
 for _ in range (250):
-  print(phrase_svc_je(), phrase_asv_je(), phrase_svcc_je())
+ phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()
