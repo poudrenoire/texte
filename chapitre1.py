@@ -32,9 +32,9 @@ def phrase_asv_je():
     adverbe_r = random.choice(adverbe)
     voyelles = ["a", "e", "i", "o", "u", "y"]
     if verbe_r[0] in voyelles:
-        sujet_r = "je"
+        sujet_r = "j\'"
     else:
-        sujet_r = "j\'"   
+        sujet_r = "je"   
     print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
         
 # Définition des phrases ditransitivrs en "Je"
