@@ -13,7 +13,6 @@ def phrase_svc_je():
     verbe = v.readlines()
     complement = c.readlines()
     # Sélection d'une ligne aléatoire des fichiers
-    sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
     voyelles = ["a", "e", "i", "o", "u", "y"]
