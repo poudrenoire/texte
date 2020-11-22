@@ -22,7 +22,7 @@ def phrase_svc_je():
         sujet_r = "je" 
     sujet_r = sujet_r.capitalize
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
-    phrase = sujet_r + str(verbe_r) + str(complement_r) + ". "
+    phrase = sujet_r, str(verbe_r), str(complement_r), ". "
     print(phrase)
     
  # Définition des phrases instransitives en "Je" avec adverbe.
