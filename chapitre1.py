@@ -19,9 +19,9 @@ def phrase_svc_je():
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
-        sujet_r = "je " 
+        sujet_r = "je" 
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
-    print(sujet_r.capitalize(),verbe_r, complement_r, ". ")
+    print(sujet_r.capitalize(), verbe_r, complement_r, ". ")
     
  # Définition des phrases instransitives en "Je" avec adverbe.
 
@@ -36,8 +36,8 @@ def phrase_asv_je():
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
-        sujet_r = "je "   
-    print(sujet_r.capitalize(),verbe_r, adverbe_r, '. ')
+        sujet_r = "je"   
+    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
         
 # Définition des phrases ditransitives en "Je"
 
@@ -55,8 +55,8 @@ def phrase_svcc_je():
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
-        sujet_r = "je "   
-    print(sujet_r.capitalize(),verbe_r, complement_r, complement2_r, '. ')
+        sujet_r = "je"   
+    print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
     
 for _ in range (250):
  phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()
