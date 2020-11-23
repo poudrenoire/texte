@@ -61,7 +61,7 @@ def phrase_svcc_je():
 # Définition des phrases transitives avec sujet concept singulier masculin
     
 def phrase_svc_conc_m_s():
-    s = open/("lex/lexique_concepts_det_m_s.txt")
+    s = open("lex/lexique_concepts_det_m_s.txt")
     v = open("lex/lexique_v_trans.txt")
     c = open("lex/lexique_objets_det.txt")
     sujet = s.read().splitlines()
