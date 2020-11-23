@@ -57,6 +57,20 @@ def phrase_svcc_je():
     else:
         sujet_r = "je"   
     print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
+
+# Définition des phrases transitives avec sujet concept singulier masculin
+    
+def phrase_svc_conc_m_s():
+    s = open/("lex/lexique_concepts_det_m_s.txt")
+    v = open("lex/lexique_v_trans.txt")
+    c = open("lex/lexique_objets_det.txt")
+    sujet = s.read().splitlines()
+    verbe = v.read().splitlines()
+    complement = c.read().splitlines()
+    sujet_r = random.choice(sujet)
+    verbe_r = random.choice(verbe)
+    complement_r = random.choice(complement)   
+    print(sujet_r.capitalize(), verbe_r, complement_r, '. ')
     
 for _ in range (250):
- phrase_svc_je(), phrase_asv_je(), phrase_svcc_je()
+ phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je()
