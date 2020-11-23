@@ -21,7 +21,7 @@ def phrase_svc_je():
     else:
         sujet_r = "je" 
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
-    print(sujet_r.capitalize(), verbe_r, complement_r, ". ")
+    print(sujet_r.capitalize(), verbe_r, complement_r, ". ", end =" ")
     
  # Définition des phrases instransitives en "Je" avec adverbe.
 
@@ -37,7 +37,7 @@ def phrase_asv_je():
         sujet_r = "j\'"
     else:
         sujet_r = "je"   
-    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ')
+    print(sujet_r.capitalize(), verbe_r, adverbe_r, '. ', end =" ")
         
 # Définition des phrases ditransitives en "Je"
 
@@ -56,7 +56,7 @@ def phrase_svcc_je():
         sujet_r = "j\'"
     else:
         sujet_r = "je"   
-    print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ')
+    print(sujet_r.capitalize(), verbe_r, complement_r, complement2_r, '. ', end =" ")
 
 # Définition des phrases transitives avec sujet concept singulier masculin
     
@@ -70,7 +70,7 @@ def phrase_svc_conc_m_s():
     sujet_r = random.choice(sujet)
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)   
-    print(sujet_r.capitalize(), verbe_r, complement_r, '. ')
+    print(sujet_r.capitalize(), verbe_r, complement_r, '. ', end =" ")
     
 for _ in range (250):
  phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je()
