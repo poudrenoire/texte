@@ -88,5 +88,5 @@ def phrase_svc_conc_f_s():
 
 phrases = [phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je(), phrase_svc_conc_f_s()]
     
-for _ in range (100):
+for _ in range (2):
  random.choices(phrases)
