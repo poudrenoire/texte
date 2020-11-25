@@ -89,5 +89,4 @@ def phrase_svc_conc_f_s():
 phrases = [phrase_svc_je(), phrase_asv_je(), 2, "mot"]
     
 for _ in range (10):
-  hasard = random.choices(phrases)
-  print(hasard)
+  random.choices(phrases)
