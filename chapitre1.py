@@ -7,7 +7,7 @@ import random
 
 def phrase_svc_je():
     # Ouverture des fichiers pour chaque type de mots dans une variable
-    v = open("lex/lexique_v_trans.txt")
+    v = open("lex/lexique_v_trans_je.txt")
     c = open("lex/lexique_objets_det.txt")
     # Lecture des fichiers dans une variable
     verbe = v.read().splitlines()
@@ -26,7 +26,7 @@ def phrase_svc_je():
  # Définition des phrases instransitives en "Je" avec adverbe.
 
 def phrase_asv_je():
-    v = open("lex/lexique_v_intrans.txt")
+    v = open("lex/lexique_v_intrans_je.txt")
     a = open("lex/lexique_adverbes.txt")
     verbe = v.read().splitlines()
     adverbe = a.read().splitlines()
@@ -42,7 +42,7 @@ def phrase_asv_je():
 # Définition des phrases ditransitives en "Je"
 
 def phrase_svcc_je():
-    v = open("lex/lexique_v_ditrans.txt")
+    v = open("lex/lexique_v_ditrans_je.txt")
     c = open("lex/lexique_objets_det.txt")
     c2 = open ("lex/lexique_objets_a.txt")
     verbe = v.read().splitlines()
@@ -62,7 +62,7 @@ def phrase_svcc_je():
     
 def phrase_svc_conc_m_s():
     s = open("lex/lexique_concepts_det_m_s.txt")
-    v = open("lex/lexique_v_trans.txt")
+    v = open("lex/lexique_v_trans_iel.txt")
     c = open("lex/lexique_objets_det.txt")
     sujet = s.read().splitlines()
     verbe = v.read().splitlines()
@@ -76,7 +76,7 @@ def phrase_svc_conc_m_s():
     
 def phrase_svc_conc_f_s():
     s = open("lex/lexique_objets_det.txt")
-    v = open("lex/lexique_v_trans.txt")
+    v = open("lex/lexique_v_trans_iel.txt")
     c = open("lex/lexique_concepts_det_m_s.txt")
     sujet = s.read().splitlines()
     verbe = v.read().splitlines()
