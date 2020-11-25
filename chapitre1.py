@@ -72,5 +72,19 @@ def phrase_svc_conc_m_s():
     complement_r = random.choice(complement)   
     print(sujet_r.capitalize(), verbe_r, complement_r, ".", end =" ")
     
-for _ in range (250):
- phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je()
+# Définition des phrases transitives avec sujet objet concept singulier féminin
+    
+def phrase_svc_conc_f_s():
+    s = open("lex/lexique_objets_det.txt")
+    v = open("lex/lexique_v_trans.txt")
+    c = open("lex/lexique_concepts_det_m_s.txt")
+    sujet = s.read().splitlines()
+    verbe = v.read().splitlines()
+    complement = c.read().splitlines()
+    sujet_r = random.choice(sujet)
+    verbe_r = random.choice(verbe)
+    complement_r = random.choice(complement)   
+    print(sujet_r.capitalize(), verbe_r, complement_r, ".", end =" ")
+    
+for _ in range (50):
+ phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je() phrase_svc_conc_f_s()
