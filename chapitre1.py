@@ -87,8 +87,11 @@ def phrase_svc_conc_f_s():
     print(sujet_r.capitalize(), verbe_r, complement_r, ".", end =" ")
 
     
-for _ in range (10):
+for _ in range (20):
   p1 = phrase_svc_je()
   p2 = phrase_asv_je()
-  list_p = (p1, p2)
+  p3 = phrase_svcc_je()
+  p4 = phrase_svc_conc_m_s()
+  p5 = phrase_svc_conc_f_s()
+  list_p = (p1, p2, p3, p4, p5)
   random.choices(list_p)
