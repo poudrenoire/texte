@@ -87,4 +87,4 @@ def phrase_svc_conc_f_s():
     print(sujet_r.capitalize(), verbe_r, complement_r, ".", end =" ")
     
 for _ in range (50):
- phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je() phrase_svc_conc_f_s()
+ phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je(), phrase_svc_conc_f_s()
