@@ -89,4 +89,4 @@ def phrase_svc_conc_f_s():
 phrases = [phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je(), phrase_svc_conc_f_s()]
     
 for _ in range (10):
- print(random.choices(phrases, k=5))
+ print(random.choice(phrases))
