@@ -15,7 +15,7 @@ def phrase_svc_je():
     # Sélection d'une ligne aléatoire des fichiers
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
-    voyelles = ["a", "e", "i", "o", "u", "y"]
+    voyelles = ["a", "e", "i", "o", "u", "y", "é"]
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
@@ -32,7 +32,7 @@ def phrase_asv_je():
     adverbe = a.read().splitlines()
     verbe_r = random.choice(verbe)
     adverbe_r = random.choice(adverbe)
-    voyelles = ["a", "e", "i", "o", "u", "y"]
+    voyelles = ["a", "e", "i", "o", "u", "y", "é"]
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
@@ -51,7 +51,7 @@ def phrase_svcc_je():
     verbe_r = random.choice(verbe)
     complement_r = random.choice(complement)
     complement2_r = random.choice(complement2)
-    voyelles = ["a", "e", "i", "o", "u", "y"]
+    voyelles = ["a", "e", "i", "o", "u", "y", "é"]
     if verbe_r[0] in voyelles:
         sujet_r = "j\'"
     else:
@@ -88,5 +88,5 @@ def phrase_svc_conc_f_s():
 
 phrases = [phrase_svc_je(), phrase_asv_je(), phrase_svc_conc_m_s(), phrase_svcc_je(), phrase_svc_conc_f_s()]
     
-for _ in range (2):
- random.choices(phrases, k=13)
+for _ in range (10):
+ random.choices(phrases, k=5)
