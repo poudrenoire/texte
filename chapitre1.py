@@ -22,6 +22,17 @@ def phrase_svc_je():
         sujet_r = "je" 
     # Impression des lignes sélectionnées, dans l'ordre spécifé, avec ajout de majuscule.
     print(sujet_r.capitalize(), verbe_r, complement_r, ".", end =" ")
+
+# Définition des phrases avec complément temporel passé, "cela" et verbe intransitif à l'imparfait
+
+def phrase_cela_imp_intrans():
+    c = open("lex/lexique_comp_t_p.txt")
+    v = open("lex/lexique_v_intrans_iel_imp.txt")
+    complement = c.read().splitlines()
+    verbe = v.read().splitlines()
+    complement_r = random.choice(complement)
+    verbe_r = random.choice(verbe)
+    print(complement_r.capitalize(), ", ", "cela", verbe_r, end=" ")
     
  # Définition des phrases instransitives en "Je" avec adverbe.
 
@@ -93,5 +104,6 @@ for _ in range (20):
   p3 = phrase_svcc_je()
   p4 = phrase_svc_conc_m_s()
   p5 = phrase_svc_conc_f_s()
-  list_p = (p1, p2, p3, p4, p5)
+  p6 = phrase_cela_imp_intrans()
+  list_p = (p1, p2, p3, p4, p5, p6)
   random.choices(list_p)
