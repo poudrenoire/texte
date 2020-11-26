@@ -32,7 +32,7 @@ def phrase_cela_imp_intrans():
     verbe = v.read().splitlines()
     complement_r = random.choice(complement)
     verbe_r = random.choice(verbe)
-    print(complement_r.capitalize(), ", ", "cela", verbe_r, end=" ")
+    print(complement_r.capitalize(), ", ", "cela", verbe_r, ".", end=" ")
     
  # Définition des phrases instransitives en "Je" avec adverbe.
 
