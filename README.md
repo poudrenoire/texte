@@ -7,6 +7,8 @@ Les Cent mille milliards de poèmes de Raymond Queneau avaient été adaptés so
 
 Plutôt que la littérature "potentielle", les algorithmes permettent une forme de littérature "exponentielle", telle qu'évoquée [ici](http://nt2.uqam.ca/en/repertoire/machines-ecrire-0). Parmi les exemples concrets et actifs de cette littérature exponentielle algorithmique, il est possible d'évoquer la version robot de dril sur [Twitter](https://twitter.com/dril_gpt2).
 
+Le développement de programmes de génération langage "naturel" est très lié aux chatbots et interraction commerciales. Après une période exploratoire, je vais essayer de construire ce programme à partir de la bibliothèque spaCy.
+
 ## Approche
 
 L'idée est d'élaborer un corpus d'environ 15'000 vocables. Ce nombre a été choisi à la louche, en considérant les statistiques de vocables de piliers ronflants de la littérature française. C'est un nombre empiriquement suffisant pour garantir une œuvre si ce programme se mettait à fonctionner un jour. Ce répertoire de vocables est réparti entre des lexiques de différentes fonctions syntaxiques. Les détails sont à voir dans le dépôt, mais je parle ici de verbes, de substantifs, d'adverbes, d'adjectifs, etc. - mais aussi des mots rares, hapax, etc.
