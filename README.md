@@ -7,7 +7,7 @@ Les Cent mille milliards de poèmes de Raymond Queneau avaient été adaptés so
 
 Plutôt que la littérature "potentielle", les algorithmes permettent une forme de littérature "exponentielle", telle qu'évoquée [ici](http://nt2.uqam.ca/en/repertoire/machines-ecrire-0). Parmi les exemples concrets et actifs de cette littérature exponentielle algorithmique, il est possible d'évoquer la version robot de dril sur [Twitter](https://twitter.com/dril_gpt2).
 
-Le développement de programmes de génération langage "naturel" est très lié aux chatbots et interraction commerciales. Après une période exploratoire, je vais essayer de construire ce programme à partir de la bibliothèque spaCy.
+Le développement de programmes de génération langage "naturel" est très lié aux chatbots et interraction commerciales. Après une période exploratoire, je vais essayer de construire ce programme à partir des bibliothèques nlglib et spaCy.
 
 ## Approche
 
