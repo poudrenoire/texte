@@ -3,11 +3,13 @@ Ceci est une tentative de créer un logiciel d'assistance à la production d'un 
 
 ## Précédents
 
+[Infinite Monkey Theorem](https://en.wikipedia.org/wiki/Infinite_monkey_theorem)
+
 Les Cent mille milliards de poèmes de Raymond Queneau avaient été adaptés sous forme informatique par Dmitri Starynkevitch en 1961. Mais la dimension entièrement aléatoire du procédé informatique avait d'abord repoussé les Oulipiens. Une autre adaptation informatique de Cent mille milliards de poèmes dont le générateur était basé sur le nom de la personne qui lançait l'application avait été mieux reconnue par le groupe. Natalie Berkman écrit un [article intéressant à ce sujet](http://digitalhumanities.org/dhq/vol/11/3/000325/000325.html).
 
 Plutôt que la littérature "potentielle", les algorithmes permettent une forme de littérature "exponentielle", telle qu'évoquée [ici](http://nt2.uqam.ca/en/repertoire/machines-ecrire-0). Parmi les exemples concrets et actifs de cette littérature exponentielle algorithmique, il est possible d'évoquer la version robot de dril sur [Twitter](https://twitter.com/dril_gpt2).
 
-Le développement de programmes de génération langage "naturel" est très lié aux chatbots et interraction commerciales. Après une période exploratoire, je vais essayer de construire ce programme à partir des bibliothèques nlglib et spaCy.
+Le développement de programmes de génération langage "naturel" est très lié aux chatbots et interraction commerciales. Après une période exploratoire, je vais essayer de construire ce programme à partir de la bibliothèque spaCy.
 
 ## Approche
 
